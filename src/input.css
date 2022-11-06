@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');                
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-body font-gilroy-regular text-primary;
+}
+
+.app-container {
+    @apply container mx-auto px-[1.5rem] py-8 lg:px-24 lg:py-14;
+}
+
+.btn {
+    @apply rounded-md bg-cta font-gilroy-bold text-center text-white;
+}
+
+.menu.active {
+    @apply opacity-100 translate-y-0 pointer-events-auto;
+}
+
+.feature-list {
+    @apply p-6 rounded-lg bg-gradient-to-r hover:from-[#FFF8F1] hover:via-[#FFF8F2] hover:to-[#E0FBE5] hover:shadow-2xl text-center w-full space-y-4 lg:p-8;
+}
+
+.feature-list .feature-icon {
+    @apply inline-block p-6 rounded-lg bg-feature;
+}
+
+.stats-wrapper {
+    @apply space-y-2 text-center md:space-y-1 md:text-left;
+}
+
+.stats-wrapper .stats-number {
+    @apply block font-gilroy-bold text-[1.5rem] lg:text-3xl;
+}
+
+.stats-wrapper .stats-desc {
+    @apply block font-gilroy-light text-[0.75rem] lg:text-sm;
+}
+
+.line {
+    @apply h-1 w-full basis-1/4 bg-cta lg:basis-1/3;
+}
+
+.btn-transition {
+    @apply transition ease-in-out duration-300 delay-75;
+}
+
+.feature-transition {
+    @apply transition duration-300 ease-in-out delay-100;
+}
